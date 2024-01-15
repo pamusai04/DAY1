@@ -79,6 +79,30 @@ public class DAY1_PQ5 {
 	}
 }
 
+//TASK 1 
+
+import java.util.*;
+//Write a program to calculater percentage of a given student in CBSE board exam. His marks from 5 subjects must be taken as input from the keyboard(marks are out Of 100)
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter Subject1 Marks : ");
+    int a = sc.nextInt();
+    System.out.print("Enter Subject2 Marks : ");
+    int b = sc.nextInt();
+    System.out.print("Enter Subject3 Marks : ");
+    int c = sc.nextInt();
+    System.out.print("Enter Subject4 Marks : ");
+    int d = sc.nextInt();
+    System.out.print("Enter Subject5 Marks : ");
+    int e = sc.nextInt();
+
+    int sum = a + b + c + d + e;
+    double percentage = (sum / (5.0 * 100)) * 100;  
+    System.out.println("5 subjects Percentage : " + percentage);
+  }
+}
+
 
 
 
